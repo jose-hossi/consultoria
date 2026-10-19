@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CLDC - Consultoria Linguística, Demócrito - Comunicação, Línguas e Desenvolvimento">
+  <title>CLDC | Consultoria Linguística</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="#inicio" class="brand" data-page="inicio">
+        <span class="brand-mark">CL</span>
+        <span><strong>CLDC</strong><small>Consultoria Linguística</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+      <nav class="nav" id="mainNav">
+        <a href="#inicio" data-page="inicio">Início</a>
+        <a href="#formacao" data-page="formacao">Formação</a>
+        <a href="#consultoria" data-page="consultoria">Consultoria</a>
+        <a href="#candidatura" data-page="candidatura">Candidaturas</a>
+        <a href="#contactos" data-page="contactos">Contactos</a>
+        <a href="#admin" data-page="admin" class="nav-admin">Administração</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="page active">
+      <div class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="eyebrow">CLDC • Formação • Consultoria • Desenvolvimento</span>
+            <h1>Conhecimento que transforma <span>o seu futuro.</span></h1>
+            <p>Consultoria Linguística, Demócrito — Comunicação, Línguas e Desenvolvimento.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#formacao" data-page="formacao">Inscrever-me</a>
+              <a class="btn btn-light" href="#consultoria" data-page="consultoria">Solicitar consultoria</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-top">CLDC</div>
+            <h3>Serviços disponíveis</h3>
+            <div class="service-mini"><span>01</span> Formação profissional</div>
+            <div class="service-mini"><span>02</span> Serviços de consultoria</div>
+            <div class="service-mini"><span>03</span> Candidaturas e oportunidades</div>
+            <div class="service-mini"><span>04</span> Gestão administrativa</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container section">
+        <div class="section-heading">
+          <span class="eyebrow">O que fazemos</span>
+          <h2>Soluções para formação e desenvolvimento</h2>
+        </div>
+        <div class="cards three">
+          <article class="card"><h3>Formação</h3><p>Inscrição em cursos presenciais ou online, com acompanhamento do formando.</p><a href="#formacao" data-page="formacao">Ver formação →</a></article>
+          <article class="card"><h3>Consultoria</h3><p>Solicite serviços de consultoria e acompanhe o seu pedido.</p><a href="#consultoria" data-page="consultoria">Ver serviços →</a></article>
+          <article class="card"><h3>Candidaturas</h3><p>Candidate-se a vagas e oportunidades disponibilizadas pela CLDC.</p><a href="#candidatura" data-page="candidatura">Candidatar-me →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacao" class="page">
+      <div class="container section">
+        <div class="section-heading">
+          <span class="eyebrow">Pacote de formação</span>
+          <h2>Inscrição do formando</h2>
+          <p>Preencha os dados abaixo. A taxa de inscrição é de <strong>5.000 Kz</strong>.</p>
+        </div>
+        <form id="formFormacao" class="form-card">
+          <div class="form-section-title">Dados pessoais</div>
+          <div class="form-grid">
+            <label>Nome completo<input name="nome" required></label>
+            <label>Data de nascimento<input name="nascimento" type="date" required></label>
+            <label>Nº do BI<input name="bi" required></label>
+            <label>Nº de telefone<input name="telefone" type="tel" required></label>
+          </div>
+          <div class="form-section-title">Residência</div>
+          <div class="form-grid">
+            <label>Província<input name="provincia" required></label>
+            <label>Município<input name="municipio" required></label>
+            <label>Bairro<input name="bairro" required></label>
+            <label>Ocupação profissional<input name="ocupacao"></label>
+          </div>
+          <div class="form-section-title">Formação</div>
+          <div class="form-grid">
+            <label>Opção de curso<select name="curso" required><option value="">Selecione</option><option>Inglês</option><option>Francês</option><option>Português</option><option>Informática</option><option>Outro</option></select></label>
+            <label>Modalidade<select name="modalidade" required><option value="">Selecione</option><option>Presencial</option><option>Online</option></select></label>
+            <label>Horário<input name="horario" placeholder="Ex.: 14:00 - 16:00"></label>
+            <label>Valor do curso (Kz)<input name="valorCurso" type="number" min="0" placeholder="Ex.: 50000"></label>
+          </div>
+          <div class="notice"><strong>Taxa de inscrição:</strong> 5.000 Kz para todos os cursos.</div>
+          <button class="btn btn-primary" type="submit">Enviar inscrição</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="consultoria" class="page">
+      <div class="container section">
+        <div class="section-heading"><span class="eyebrow">Pacote de serviços</span><h2>Solicitar consultoria</h2></div>
+        <form id="formConsultoria" class="form-card">
+          <div class="form-grid">
+            <label>Nome completo<input name="nome" required></label>
+            <label>Telemóvel<input name="telemovel" type="tel" required></label>
+            <label>Nº do BI<input name="bi" required></label>
+            <label>Ocupação profissional<input name="ocupacao"></label>
+            <label>Província<input name="provincia" required></label>
+            <label>Município<input name="municipio" required></label>
+            <label>Bairro<input name="bairro" required></label>
+            <label>Serviço pretendido<select name="servico" required><option value="">Selecione</option><option>Consultoria linguística</option><option>Tradução</option><option>Formação empresarial</option><option>Revisão de documentos</option><option>Outro</option></select></label>
+          </div>
+          <label>Descrição do pedido<textarea name="descricao" rows="5" placeholder="Explique brevemente o serviço que pretende."></textarea></label>
+          <button class="btn btn-primary" type="submit">Enviar pedido</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="candidatura" class="page">
+      <div class="container section">
+        <div class="section-heading"><span class="eyebrow">SistC • Administração e Gestão</span><h2>Candidatura</h2><p>Depois do envio, a candidatura poderá ser avaliada pela administração.</p></div>
+        <form id="formCandidatura" class="form-card">
+          <div class="form-grid">
+            <label>Nome completo<input name="nome" required></label>
+            <label>Nº do BI<input name="bi" required></label>
+            <label>Nível académico<select name="nivel" required><option value="">Selecione</option><option>9ª Classe</option><option>12ª Classe</option><option>Técnico Médio</option><option>Licenciatura</option><option>Outro</option></select></label>
+            <label>Curso profissional<input name="cursoProfissional"></label>
+            <label>Província<input name="provincia" required></label>
+            <label>Município<input name="municipio" required></label>
+            <label>Bairro<input name="bairro" required></label>
+            <label>Vaga a que se candidata<input name="vaga" required></label>
+          </div>
+          <div class="upload-row">
+            <label>Certificado académico/profissional<input type="file" name="certificado" accept=".pdf,.jpg,.jpeg,.png"></label>
+          </div>
+          <label>Objetivo<textarea name="objetivo" rows="5" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Enviar candidatura</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="contactos" class="page">
+      <div class="container section">
+        <div class="section-heading"><span class="eyebrow">Fale connosco</span><h2>Contactos CLDC</h2></div>
+        <div class="contact-grid">
+          <div class="contact-card"><span></span><h3>Telefone / WhatsApp</h3><p>931 402 462</p><a class="btn btn-whatsapp" href="https://wa.me/244931402462" target="_blank" rel="noopener">Contactar no WhatsApp</a></div>
+          <div class="contact-card"><span></span><h3>Localização</h3><p>Angola</p><small>Adicione aqui o endereço oficial da CLDC.</small></div>
+          <div class="contact-card"><span></span><h3>E-mail</h3><p>Contacto institucional</p><small>Adicione aqui o e-mail oficial.</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="admin" class="page">
+      <div class="container section">
+        <div id="loginBox" class="login-card">
+          <span class="eyebrow">Área restrita</span><h2>Administração CLDC</h2><p>Acesso demonstrativo do frontend.</p>
+          <form id="loginForm">
+            <label>Utilizador<input id="adminUser" required autocomplete="username"></label>
+            <label>Palavra-passe<input id="adminPass" type="password" required autocomplete="current-password"></label>
+            <button class="btn btn-primary" type="submit">Entrar</button>
+            <small class="demo-note">Demonstração: admin / cldc123</small>
+          </form>
+        </div>
+
+        <div id="adminPanel" class="admin-panel hidden">
+          <div class="admin-head"><div><span class="eyebrow">SistC</span><h2>Painel administrativo</h2></div><button id="logoutBtn" class="btn btn-outline">Sair</button></div>
+          <div class="stats">
+            <div><span>Formandos</span><strong id="statFormandos">0</strong></div>
+            <div><span>Consultas</span><strong id="statConsultas">0</strong></div>
+            <div><span>Candidaturas</span><strong id="statCandidaturas">0</strong></div>
+          </div>
+          <div class="admin-actions">
+            <button class="admin-action" data-pdf="certificado">📜 Gerar certificado</button>
+            <button class="admin-action" data-pdf="factura">🧾 Gerar factura</button>
+            <button class="admin-action" data-pdf="candidatura">📄 Folha de candidatura</button>
+            <button class="admin-action" id="clearData">🗑 Limpar dados de demonstração</button>
+          </div>
+          <div class="admin-info">
+            <h3>Gestão interna prevista</h3>
+            <ul>
+              <li>Lançamento de notas e cálculo automático da média</li>
+              <li>Registo de faltas</li>
+              <li>Controlo de módulos em atraso (5.000 Kz)</li>
+              <li>Geração de certificados</li>
+              <li>Geração de facturas após pagamento</li>
+              <li>Gestão e avaliação de candidaturas</li>
+              <li>Gestão interna de funcionários</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><strong>CLDC</strong><p>Consultoria Linguística, Demócrito — Comunicação, Línguas e Desenvolvimento.</p></div>
+      <div><p>© <span id="year"></span> CLDC. Todos os direitos reservados.</p></div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
